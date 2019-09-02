@@ -17,15 +17,16 @@ def update(index, item):
 def destroy(index):
     checklist.pop(index)
 
-def list_all_items(): #Lists all items in checklist
+#Loops through checklist until all items are printed
+def list_all_items():
     index = 0
     for list_item in checklist:
         print("{} {}".format(index, list_item))
         index += 1
 
 #Adds index to checklist
-def mark_completed(index):
-    checklist.append()
+#def mark_completed(index):
+#    checklist.append()
 
 def user_input(prompt):
     # the input function will display a message in the terminal
