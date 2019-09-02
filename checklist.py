@@ -23,6 +23,7 @@ def list_all_items(): #Lists all items in checklist
         print("{} {}".format(index, list_item))
         index += 1
 
+#Adds index to checklist
 def mark_completed(index):
     checklist.append()
 
@@ -86,6 +87,8 @@ def select(function_code):
         print("Unknown Option or Index is empty")
     return True
 
+#Continuously asks for an input from the list, and uses the select function
+#to give a repsonse.
 running = True
 while running:
     selection = user_input(
